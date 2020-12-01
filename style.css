@@ -1,0 +1,12 @@
+:root {
+  --importance10: rgb(0, 0, 0);
+  --importance9: rgb(26, 26, 26);
+  --importance8: rgb(51, 51, 51);
+  --importance7: rgb(77, 77, 77);
+  --importance6: rgb(102, 102, 102);
+  --importance5: rgb(128, 128, 128);
+  --importance4: rgb(153, 153, 153);
+  --importance3: rgb(178, 178, 178);
+  --importance2: rgb(204, 204, 204);
+  --importance1: rgb(230, 230, 230);
+}
