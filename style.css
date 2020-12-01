@@ -10,3 +10,201 @@
   --importance2: rgb(204, 204, 204);
   --importance1: rgb(230, 230, 230);
 }
+
+/* Temporarily give everything a red border for positioning/clarity*/
+body * {
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+
+/* General styling */
+body > * {
+  margin-bottom: 50px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+button {
+  display: block;
+}
+
+.see-more {
+  width: 230px;
+  height: 50px;
+}
+
+/* Positioning, top down*/
+.main-header {
+  height: 110px;
+}
+
+/* First bunch of articles */
+.articles-primary {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+
+.articles-primary .article {
+  height: 150px;
+  grid-column: span 2;
+}
+
+.articles-primary .articles-newest {
+  height: 450px;
+}
+
+.articles-primary .aside {
+  height: 650px;
+  grid-column: span 1 / -1;
+  grid-row: 1 / span 3;
+  align-self: start;
+}
+
+.articles-primary .see-more {
+  grid-column: 2;
+  justify-self: center;
+}
+
+/* Second bunch of articles */
+.articles-secondary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+}
+
+.articles-secondary .article {
+  height: 650px;
+}
+
+.articles-secondary .aside {
+  height: 650px;
+  grid-column: span 2;
+}
+
+.articles-secondary .see-more {
+  grid-column: 2 / span 2;
+  justify-self: center;
+}
+
+/* First advertising*/
+.click {
+  height: 950px;
+}
+
+.click > * {
+  margin: 20px auto;
+}
+
+.click .shipping-info {
+  width: 350px;
+  height: 20px;
+}
+
+.click > h1 {
+  width: 750px;
+  height: 120px;
+}
+
+.click .description {
+  width: 1050px;
+  height: 90px;
+}
+
+.click button {
+  width: 400px;
+  height: 70px;
+}
+
+.click .image {
+  width: 900px;
+  height: 500px;
+}
+
+/* Guides section*/
+.guides {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.guides .guide {
+  height: 350px;
+}
+
+.guides .guide:nth-child(3) {
+  height: 900px;
+}
+
+.guides .newsletter {
+  height: 900px;
+}
+
+.guides .see-more {
+  grid-column: span 2;
+  justify-self: center;
+}
+
+/* Second advertising*/
+.design-systems {
+  padding: 50px;
+}
+
+.design-systems > * {
+  margin-top: 20px;
+}
+
+.book-info {
+  width: 300px;
+  height: 20px;
+}
+
+.design-systems h1 {
+  width: 350px;
+  height: 90px;
+}
+
+.design-systems .description {
+  width: 1100px;
+  height: 70px;
+}
+
+.design-systems button {
+  width: 400px;
+  height: 70px;
+}
+
+.design-systems .image {
+  width: 300px;
+  height: 400px;
+  float: right;
+  margin-top: -150px;
+}
+
+/* Community section */
+.community {
+  height: 1650px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.community .person-of-the-week {
+  grid-column: span 2;
+  height: 270px;
+  margin-top: 50px;
+}
+
+.community .article {
+  height: 350px;
+}
+
+.community .see-more {
+  grid-column: span 2;
+  justify-self: center;
+}
+
+.main-footer {
+  height: 750px;
+  margin-bottom: 0;
+}
